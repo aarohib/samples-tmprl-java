@@ -1,9 +1,9 @@
-# io.myproject:data-converter-AB:4 Project
+# io.myproject:data-converter-cloud Project
 
-Implements a simple use case and uses custom data converter to encode and decode payloads.
+Implements a simple Workflow + Activity that takes an input, selects a random word from the dictionary and returns the input appended with the random word.
+It implements a custom data converter to encode and decode the payloads.
 
-To run the created workflow you have to have the Temporal server installed.
-Easy way is to do that with [Docker Compose](https://docs.docker.com/compose/gettingstarted/).
+To run the Workflow:
 
 1. Log in to your Temporal Cloud account/namespace.
 2. Update the cloud target endpoint, namespace, your client certificate and key in the Utils file.
