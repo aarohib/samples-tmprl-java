@@ -1,6 +1,7 @@
 # io.myproject:data-converter-AB:4 Project
 
-Implements a simple use case and uses custom data converter to encode and decode payloads.
+Implements a simple Workflow + Activity that takes an input, selects a random word from the dictionary and returns the input appended with the random word.
+It also uses a custom data converter to encode and decode the payloads.
 
 To run the created workflow you have to have the Temporal server installed.
 
