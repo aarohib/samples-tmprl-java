@@ -4,8 +4,8 @@ This project has two activities:
 
 To run this sample:
 - Run Temporal Server
-- Run the OSSStartWorker to start the worker
-- Run the OSSStartRead to start reading
+- Run the OSSWorker to start the worker
+- Run the OSSStartReading to start reading
 
 The workflow starts, waits for 30 seconds, and then asks for your name. 
 Enter your name in the console for the workflow to complete.
