@@ -4,9 +4,11 @@ import io.temporal.client.WorkflowClient;
 import io.temporal.client.WorkflowOptions;
 import io.temporal.serviceclient.WorkflowServiceStubs;
 
+import java.io.IOException;
+
 public class OSSStartReading {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         WorkflowServiceStubs startservice = WorkflowServiceStubs.newLocalServiceStubs();
 
         /*
@@ -16,7 +18,7 @@ public class OSSStartReading {
 
         Reading ossworkflow = startclient.newWorkflowStub(Reading.class,
                 WorkflowOptions.newBuilder()
-                        .setWorkflowId("SSosswithName")
+                        .setWorkflowId("ReadingforInput")
                         .setTaskQueue("ossTQ")
                         .build());
         //WorkflowClient.start(ossworkflow::getReading); //this is not blocking. Will only block until the server gets the request and return with some wf run id etc.

@@ -21,17 +21,14 @@ public class ReadingImpl implements Reading{
                             .setStartToCloseTimeout(Duration.ofSeconds(15))
                             .build());
     @Override
-    public String getReading(){
+    public String getReading() throws IOException {
         System.out.println("Start reading");
         //String userName = getNameActivity.getName();
         //String yourCard = getCardActivity.getCard();
         // Printing the read line
         Workflow.sleep(Duration.ofSeconds(30));
         //System.out.println("Hello " + getNameActivity.getName() + ", the card picked for you is: " + getCardActivity.getCard());
-        try {
-            return "Hello " + getNameActivity.getName() + ", the card picked for you is: " + getCardActivity.getCard();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        return "Hello " + getNameActivity.getName() + ", the card picked for you is: " + getCardActivity.getCard();
+
     }
 }

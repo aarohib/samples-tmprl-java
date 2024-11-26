@@ -14,12 +14,8 @@ public class GetNameImpl implements GetName{
         // Reading data using readLine
         //System.out.println("Enter your name:");
         String name;
-        try {
             System.out.println("Enter your name:");
             name = reader.readLine();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
         return name;
     }
 }
